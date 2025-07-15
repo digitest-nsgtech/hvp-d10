@@ -1,6 +1,10 @@
 <?php
 
 $base_url = 'https://school-two.nsgtech.eu';
+
+putenv('AWS_ACCESS_KEY_ID=d1bc27863cb8bdee9e7204900d55a35a');
+putenv('AWS_SECRET_ACCESS_KEY=d1bc27863cb8bdee9e7204900d55a35a');
+
 // phpcs:ignoreFile
 
 /**
