@@ -28,10 +28,10 @@ spec:
             secretKeyRef:
               name: aws-creds
               key: AWS_SECRET_ACCESS_KEY
-#        volumeMounts:
-#        - name: drupal-code
-#          mountPath: /var/www/html  # this path must remain standard here
-#      volumes:
-#      - name: drupal-code
-#        persistentVolumeClaim:
-#          claimName: drupal10-code-pvc
+        volumeMounts:
+        - name: drupal-code
+          mountPath: /var/www/html  # this path must remain standard here
+      volumes:
+      - name: drupal-code
+        persistentVolumeClaim:
+          claimName: drupal10-code-pvc
