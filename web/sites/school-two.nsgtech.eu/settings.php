@@ -916,8 +916,8 @@ $databases['default']['default'] = array (
 // ——————————————————————————
 // 0) Credentials & wrapper flags
 // ——————————————————————————
-$settings['s3fs.access_key'] = getenv('AWS_ACCESS_KEY_ID');
-$settings['s3fs.secret_key'] = getenv('AWS_SECRET_ACCESS_KEY');
+$settings['s3fs.access_key'] = 'd1bc27863cb8bdee9e7204900d55a35a';
+$settings['s3fs.secret_key'] = 'b54382b9e06474f8a117a7ee1ed3aba0';
 $settings['s3fs.use_s3_for_public']  = TRUE;
 $settings['s3fs.use_s3_for_private'] = TRUE;
 
