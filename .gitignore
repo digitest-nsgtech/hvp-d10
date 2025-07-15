@@ -21,8 +21,7 @@
 /.lando.yml
 /.lando
 
-# Ignore .htaccess fiels as they may be different per environment.
-/web/.htaccess
+
 
 /Documents/
 hvpdrupalkey*
