@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drupal10
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: drupal10
+  template:
+    metadata:
+      labels:
+        app: drupal10
+    spec:
+      containers:
+      - name: drupal
+        image: drupal:10-php8.3-apache
+        ports:
+        - containerPort: 80
+        env:
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: aws-creds
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: aws-creds
+              key: AWS_SECRET_ACCESS_KEY
+#        volumeMounts:
+#        - name: drupal-code
+#          mountPath: /var/www/html  # this path must remain standard here
+#      volumes:
+#      - name: drupal-code
+#        persistentVolumeClaim:
+#          claimName: drupal10-code-pvc

@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: school-one-drupal-tls
+  namespace: default
+spec:
+  secretName: school-one-drupal-tls
+  issuerRef:
+    name: letsencrypt-http
+    kind: ClusterIssuer
+  dnsNames:
+    - school-one.nsgtech.eu
