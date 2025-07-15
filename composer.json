@@ -107,6 +107,7 @@
         "drupal/redirect": "^1.11",
         "drupal/robotstxt": "^1.4",
         "drupal/role_delegation": "1.x-dev@dev",
+        "drupal/s3fs": "^3.8",
         "drupal/scheduler": "^2.2",
         "drupal/search_api": "^1.38",
         "drupal/search_api_autocomplete": "^1.4",
